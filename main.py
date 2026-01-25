@@ -43,7 +43,7 @@ async def extract_idea(request: IdeaRequest):
             "feedback": ""
         }
 
-        추가 텍스트 절대 금지.
+        추가 텍스트 및 주석 처리 절대 금지.
         """
 
         model = google_genai.GenerativeModel("gemini-2.5-flash")
